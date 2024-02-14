@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"c:\\Users\\SNEHA\\Desktop\\JavaScript\\a.cpp","tests":[{"id":1707841000440,"input":"1\n6 5 2\n1 2 7 4 9 6","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\SNEHA\\Desktop\\JavaScript\\a.cpp","group":"local","local":true}

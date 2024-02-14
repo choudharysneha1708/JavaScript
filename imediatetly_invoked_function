@@ -1,0 +1,12 @@
+// Imediately invoked function expression--> like when u declear a function at that time function is called. sometime global scope ke polution se problem hota h toh  globle scope ke
+// variables change na kre function ko ya uske value ko jo woh return krne wala tha isliye imediately invoked function ka use krte h 
+// for that u need to wrap whole function inside () and after that again use this ()
+// if u have to use more than one iife in one file then u need write ; after one iife otherwise it will give error
+like:-
+(function chai(){                       // named iife as this function has name
+    console.log("hello Sneha! ")
+})();
+// in iife we can also use arrow function 
+((name)=>{                               // simple iife/unknown iife as this function has not any name
+    console.log(`hello ${name}`);
+})('sneha');
