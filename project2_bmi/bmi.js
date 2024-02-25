@@ -20,4 +20,4 @@ form.addEventListener('submit', function(e){
             result.innerHTML = `<span>Your BMI is ${bmi}, You are overweight</span>`;
         }
     }
-});
+})
