@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`; // in this it need to traverse whole tree
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguage("python");
+    addLanguage("Java");
+    function addOptiLang(langName){  // try to write in this way
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));// in this it does not required to traverse whole
+        //  list it just create child and append into the node
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptiLang('golang');
+    //EDIT
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "Mojo";
+    const newLi = document.createElement('li');
+    newLi.textContent = "Mojo";
+    secondLang.replaceWith(newLi);
+    //edit
+    const firstLang = document.querySelector("li: first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()</script>
+</html>>>
