@@ -17,7 +17,7 @@ let Sneha = new User("Sneha")
 class Teacher extends User{
     constructor(userName , email){
         
-        super(userName);
+        super(userName);  // instead of using call function u can use supper in classes
         this.email = email;
     }
 }
